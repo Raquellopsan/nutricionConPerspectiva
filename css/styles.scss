@@ -1,0 +1,116 @@
+//#758058
+//#A4AA7C
+//#E2E0CF
+//#BFBB95
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+//PORTADA
+
+.portada{
+    position: relative;
+    
+    & img{
+        filter: brightness(40%);
+    }
+    .title1{
+        position: absolute;
+        top: 17%;
+        left: 17%;
+        
+        font-size: 20px;
+
+        color: white;
+    }
+    .title2{
+        position: absolute;
+        top: 30%;
+        left: 6%;
+        
+        font-size: 35px;
+        width: 500px;
+        font-weight: bold;
+        color: #C3C6A5;
+    }
+}
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+    //PORTADA 
+
+    .portada{
+        .title1{
+            position: absolute;
+            top: 20%;
+            left: 41%;
+            width: 400px;
+            font-size: 30px;
+            text-align: right;
+        }
+        .title2{
+            top: 37%;
+            left: 16%;
+            width: 600px;
+            font-size: 40px;
+            text-align: right;  
+        }
+    }
+   
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+    //PORTADA 
+
+    .portada{
+        .title1{
+            position: absolute;
+            top: 20%;
+            left: 53%;
+            width: 400px;
+            font-size: 32px; 
+        }
+        .title2{
+            top: 37%;
+            left: 8%;
+            width: 850px;
+            font-size: 47px;
+        }
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    //PORTADA 
+
+    .portada{
+        .title1{
+            position: absolute;
+            top: 20%;
+            left: 60%;
+            width: 400px;
+            font-size: 32px; 
+        }
+        .title2{
+            top: 35%;
+            left: 22%;
+            width: 850px;
+            font-size: 55px;
+        }
+    }
+}
+
+
+
