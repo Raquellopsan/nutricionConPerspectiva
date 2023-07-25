@@ -24,11 +24,31 @@ img {
 .portada .title2 {
   position: absolute;
   top: 30%;
-  left: 6%;
+  left: 5%;
   font-size: 35px;
-  width: 500px;
+  width: 600px;
   font-weight: bold;
   color: #C3C6A5;
+}
+
+.titulo_introduccion {
+  color: #758058;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.introduccion {
+  padding: 20px;
+}
+.introduccion img {
+  filter: brightness(80%);
+  border-radius: 5px;
+}
+.introduccion .descripcion_introduccion {
+  padding: 6px;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -47,6 +67,10 @@ img {
     width: 600px;
     font-size: 40px;
     text-align: right;
+  }
+  .introduccion {
+    padding: 5px;
+    margin-top: 30px;
   }
 }
 /* Large devices (desktops, 992px and up)*/
