@@ -51,6 +51,76 @@ img {
   margin-top: 5px;
 }
 
+.opiniones {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.cards_contenedor {
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #758058;
+  padding: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.card h3 {
+  margin-top: 15px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .portada .title1 {
