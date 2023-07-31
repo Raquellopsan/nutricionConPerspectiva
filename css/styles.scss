@@ -201,6 +201,116 @@ img{
         }
     }
 }
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+
+    }
+
+}
+.contenedor_formulario{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    
+    
+
+    .contactoInfo{
+        position: absolute;
+        top: 40px;
+        width: 350px;
+        height: calc(100% - 80px);
+        background-color: #758058;
+        z-index: 1;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+    }
+
+    .contactoForm{
+        position: absolute;
+        padding: 70px 50px;
+        padding-left: 250px;
+        margin-left: 150px;
+        width: calc(100% - 150px);
+        height: 100%;
+        background-color:white ;
+        border: 1px solid #758058;
+        box-shadow: 0 50px 50px rgba(0,0,0,0.15);
+    }
+
+    .contactoInfo h2{
+        color: #E2E0CF;
+        font-size: 28px;
+
+    }
+
+    .contactoInfo ul.info{
+        position: relative;
+        margin:30px -30px;
+    }
+
+    .contactoInfo ul.info li{
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+        align-items: flex-start;
+    }
+
+    .contactoInfo ul.info li span:nth-child(1){
+        width: 30px;
+        min-width: 30px;
+    }
+
+    .contactoInfo ul.info li span:nth-child(1) img{
+        max-width: 100%;
+        filter: invert(1);
+    }
+
+    .contactoInfo ul.info li span:nth-child(2){
+        color: white;
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .contactoInfo ul.iconos{
+        position: relative;
+        display: flex;
+        margin-left: -30px;
+        
+    }
+
+    .contactoInfo ul.iconos li{
+        list-style: none;
+        margin-right: 15px;
+    }
+
+    .contactoInfo ul.iconos li a{
+        text-decoration: none;
+    }
+
+    .contactoInfo ul.iconos li a img{
+        filter: invert(1);
+    }
+}
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
