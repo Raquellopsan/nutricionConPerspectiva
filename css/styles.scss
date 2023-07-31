@@ -178,30 +178,8 @@ img{
     
  
    }
-}
 
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-
-    //PORTADA 
-
-    .portada{
-        .title1{
-            position: absolute;
-            top: 20%;
-            left: 53%;
-            width: 400px;
-            font-size: 32px; 
-        }
-        .title2{
-            top: 37%;
-            left: 8%;
-            width: 850px;
-            font-size: 47px;
-        }
-    }
-}
-.formulario{
+   .formulario{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,7 +288,112 @@ img{
     .contactoInfo ul.iconos li a img{
         filter: invert(1);
     }
+
+    .contactoForm h2{
+        color: #758058;
+        font-size: 24px;
+
+    }
+
+    .contactoForm{
+        .formBox{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 30px;
+
+            .inputBox{
+                position: relative;
+                margin-bottom: 35px;
+            }
+
+            .inputBox.w50{
+                width: 47%;
+            }
+
+            .inputBox.w100{
+                width: 100%;
+            }
+
+            .inputBox input, .inputBox textarea{
+                width: 100%;
+                resize: none;
+                padding: 5px 0;
+                font-size: 18px;
+                color: #333;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #777;
+            }
+
+            .inputBox textarea{
+                height: 120px;
+            }
+
+            .inputBox span{
+              position: absolute;
+              left: 0;
+              padding: 5px 0;
+              pointer-events: none;
+              font-size: 18px;
+              transition: 0.3s;  
+            }
+
+            .inputBox input:focus ~ span, .inputBox input:valid ~ span, .inputBox textarea:focus ~ span, .inputBox textarea:valid ~ span{
+                transform: rotateY(-20px);
+             
+            }
+
+            .inputBox input[type="submit"]{
+                position: relative;
+                cursor: pointer;
+                background-color: #758058;
+                color: white;
+                border: none;
+                max-width: 150px;
+                padding: 12px;
+            }
+
+            .inputBox input[type="submit"]:hover{
+                background-color: #BFBB95;
+            }
+
+
+
+
+
+        }
+
+            
+    }
+
+    
 }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+    //PORTADA 
+
+    .portada{
+        .title1{
+            position: absolute;
+            top: 20%;
+            left: 53%;
+            width: 400px;
+            font-size: 32px; 
+        }
+        .title2{
+            top: 37%;
+            left: 8%;
+            width: 850px;
+            font-size: 47px;
+        }
+    }
+}
+
+
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
@@ -335,3 +418,4 @@ img{
 
 
 
+}
