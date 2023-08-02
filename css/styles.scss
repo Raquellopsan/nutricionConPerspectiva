@@ -13,6 +13,7 @@ img{
     max-width: 100%;
 }
 
+
 //PORTADA
 
 .portada{
@@ -64,7 +65,7 @@ img{
     .descripcion_introduccion{
         padding: 6px;
         font-size: 17px;
-        text-align: center;
+        text-align: justify;
         margin-top: 5px;
     }
 }
@@ -146,40 +147,7 @@ img{
     transform: perspective(600px) rotateY(360deg);
 }
 
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-
-    //PORTADA 
-
-    .portada{
-        .title1{
-            position: absolute;
-            top: 20%;
-            left: 41%;
-            width: 400px;
-            font-size: 30px;
-            text-align: right;
-        }
-        .title2{
-            top: 37%;
-            left: 16%;
-            width: 600px;
-            font-size: 40px;
-            text-align: right;  
-        }
-    }
-
-    // INTRODUCCION
-
-   .introduccion{
-    padding: 5px;
-    margin-top: 30px;
-    
- 
-   }
-
-   .formulario{
+.formulario{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,17 +326,44 @@ img{
             .inputBox input[type="submit"]:hover{
                 background-color: #BFBB95;
             }
-
-
-
-
-
         }
-
             
+    }    
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+    //PORTADA 
+
+    .portada{
+        .title1{
+            position: absolute;
+            top: 20%;
+            left: 41%;
+            width: 400px;
+            font-size: 30px;
+            text-align: right;
+        }
+        .title2{
+            top: 37%;
+            left: 16%;
+            width: 600px;
+            font-size: 40px;
+            text-align: right;  
+        }
     }
 
+    // INTRODUCCION
+
+   .introduccion{
+    padding: 5px;
+    margin-top: 30px;
     
+ 
+   }
+
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -418,4 +413,3 @@ img{
 
 
 
-}
