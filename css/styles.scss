@@ -147,6 +147,8 @@ img{
     transform: perspective(600px) rotateY(360deg);
 }
 
+
+
 .formulario{
     display: flex;
     justify-content: center;
@@ -200,62 +202,66 @@ img{
         box-shadow: 0 50px 50px rgba(0,0,0,0.15);
     }
 
-    .contactoInfo h2{
-        color: #E2E0CF;
-        font-size: 28px;
-
+    .contactoInfo{
+        h2{
+            color: #E2E0CF;
+            font-size: 28px;
+    
+        }
+    
+        ul.info{
+            position: relative;
+            margin:30px -30px;
+        }
+    
+        ul.info li{
+            position: relative;
+            list-style: none;
+            display: flex;
+            margin: 20px 0;
+            cursor: pointer;
+            align-items: flex-start;
+        }
+    
+        ul.info li span:nth-child(1){
+            width: 30px;
+            min-width: 30px;
+        }
+    
+        ul.info li span:nth-child(1) img{
+            max-width: 100%;
+            filter: invert(1);
+        }
+    
+        ul.info li span:nth-child(2){
+            color: white;
+            margin-left: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    
+        ul.iconos{
+            position: relative;
+            display: flex;
+            margin-left: -30px;
+            
+        }
+    
+        ul.iconos li{
+            list-style: none;
+            margin-right: 15px;
+        }
+    
+        ul.iconos li a{
+            text-decoration: none;
+        }
+    
+        ul.iconos li a img{
+            filter: invert(1);
+        }
     }
 
-    .contactoInfo ul.info{
-        position: relative;
-        margin:30px -30px;
-    }
-
-    .contactoInfo ul.info li{
-        position: relative;
-        list-style: none;
-        display: flex;
-        margin: 20px 0;
-        cursor: pointer;
-        align-items: flex-start;
-    }
-
-    .contactoInfo ul.info li span:nth-child(1){
-        width: 30px;
-        min-width: 30px;
-    }
-
-    .contactoInfo ul.info li span:nth-child(1) img{
-        max-width: 100%;
-        filter: invert(1);
-    }
-
-    .contactoInfo ul.info li span:nth-child(2){
-        color: white;
-        margin-left: 10px;
-        margin-top: 5px;
-        font-size: 14px;
-    }
-
-    .contactoInfo ul.iconos{
-        position: relative;
-        display: flex;
-        margin-left: -30px;
-        
-    }
-
-    .contactoInfo ul.iconos li{
-        list-style: none;
-        margin-right: 15px;
-    }
-
-    .contactoInfo ul.iconos li a{
-        text-decoration: none;
-    }
-
-    .contactoInfo ul.iconos li a img{
-        filter: invert(1);
-    }
+    
 
     .contactoForm h2{
         color: #758058;
@@ -332,6 +338,9 @@ img{
 }
 
 
+//RESPONSIVEEE
+
+
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
 
@@ -385,7 +394,7 @@ img{
             width: 850px;
             font-size: 47px;
         }
-    }
+    } 
 }
 
 
@@ -408,7 +417,7 @@ img{
             width: 850px;
             font-size: 55px;
         }
-    }
+    }   
 }
 
 

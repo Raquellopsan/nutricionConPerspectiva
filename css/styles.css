@@ -47,7 +47,7 @@ img {
 .introduccion .descripcion_introduccion {
   padding: 6px;
   font-size: 17px;
-  text-align: center;
+  text-align: justify;
   margin-top: 5px;
 }
 
@@ -121,6 +121,156 @@ img {
   transform: perspective(600px) rotateY(360deg);
 }
 
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.formulario::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.contenedor_formulario {
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  z-index: 1000;
+}
+.contenedor_formulario .contactoInfo {
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background-color: #758058;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+.contenedor_formulario .contactoForm {
+  position: absolute;
+  padding: 70px 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  height: 100%;
+  background-color: white;
+  border: 1px solid #758058;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15);
+}
+.contenedor_formulario .contactoInfo h2 {
+  color: #E2E0CF;
+  font-size: 28px;
+}
+.contenedor_formulario .contactoInfo ul.info {
+  position: relative;
+  margin: 30px -30px;
+}
+.contenedor_formulario .contactoInfo ul.info li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+.contenedor_formulario .contactoInfo ul.info li span:nth-child(1) {
+  width: 30px;
+  min-width: 30px;
+}
+.contenedor_formulario .contactoInfo ul.info li span:nth-child(1) img {
+  max-width: 100%;
+  filter: invert(1);
+}
+.contenedor_formulario .contactoInfo ul.info li span:nth-child(2) {
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.contenedor_formulario .contactoInfo ul.iconos {
+  position: relative;
+  display: flex;
+  margin-left: -30px;
+}
+.contenedor_formulario .contactoInfo ul.iconos li {
+  list-style: none;
+  margin-right: 15px;
+}
+.contenedor_formulario .contactoInfo ul.iconos li a {
+  text-decoration: none;
+}
+.contenedor_formulario .contactoInfo ul.iconos li a img {
+  filter: invert(1);
+}
+.contenedor_formulario .contactoForm h2 {
+  color: #758058;
+  font-size: 24px;
+}
+.contenedor_formulario .contactoForm .formBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox {
+  position: relative;
+  margin-bottom: 35px;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox.w50 {
+  width: 47%;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox.w100 {
+  width: 100%;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox input, .contenedor_formulario .contactoForm .formBox .inputBox textarea {
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  font-size: 18px;
+  color: #333;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox textarea {
+  height: 120px;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox input:focus ~ span, .contenedor_formulario .contactoForm .formBox .inputBox input:valid ~ span, .contenedor_formulario .contactoForm .formBox .inputBox textarea:focus ~ span, .contenedor_formulario .contactoForm .formBox .inputBox textarea:valid ~ span {
+  transform: rotateY(-20px);
+}
+.contenedor_formulario .contactoForm .formBox .inputBox input[type=submit] {
+  position: relative;
+  cursor: pointer;
+  background-color: #758058;
+  color: white;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+}
+.contenedor_formulario .contactoForm .formBox .inputBox input[type=submit]:hover {
+  background-color: #BFBB95;
+}
+
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .portada .title1 {
@@ -142,158 +292,9 @@ img {
     padding: 5px;
     margin-top: 30px;
   }
-  .formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  .formulario::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-  }
-  .contenedor_formulario {
-    position: relative;
-    min-width: 1100px;
-    min-height: 550px;
-    display: flex;
-    z-index: 1000;
-  }
-  .contenedor_formulario .contactoInfo {
-    position: absolute;
-    top: 40px;
-    width: 350px;
-    height: calc(100% - 80px);
-    background-color: #758058;
-    z-index: 1;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
-  }
-  .contenedor_formulario .contactoForm {
-    position: absolute;
-    padding: 70px 50px;
-    padding-left: 250px;
-    margin-left: 150px;
-    width: calc(100% - 150px);
-    height: 100%;
-    background-color: white;
-    border: 1px solid #758058;
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15);
-  }
-  .contenedor_formulario .contactoInfo h2 {
-    color: #E2E0CF;
-    font-size: 28px;
-  }
-  .contenedor_formulario .contactoInfo ul.info {
-    position: relative;
-    margin: 30px -30px;
-  }
-  .contenedor_formulario .contactoInfo ul.info li {
-    position: relative;
-    list-style: none;
-    display: flex;
-    margin: 20px 0;
-    cursor: pointer;
-    align-items: flex-start;
-  }
-  .contenedor_formulario .contactoInfo ul.info li span:nth-child(1) {
-    width: 30px;
-    min-width: 30px;
-  }
-  .contenedor_formulario .contactoInfo ul.info li span:nth-child(1) img {
-    max-width: 100%;
-    filter: invert(1);
-  }
-  .contenedor_formulario .contactoInfo ul.info li span:nth-child(2) {
-    color: white;
-    margin-left: 10px;
-    margin-top: 5px;
-    font-size: 14px;
-  }
-  .contenedor_formulario .contactoInfo ul.iconos {
-    position: relative;
-    display: flex;
-    margin-left: -30px;
-  }
-  .contenedor_formulario .contactoInfo ul.iconos li {
-    list-style: none;
-    margin-right: 15px;
-  }
-  .contenedor_formulario .contactoInfo ul.iconos li a {
-    text-decoration: none;
-  }
-  .contenedor_formulario .contactoInfo ul.iconos li a img {
-    filter: invert(1);
-  }
-  .contenedor_formulario .contactoForm h2 {
-    color: #758058;
-    font-size: 24px;
-  }
-  .contenedor_formulario .contactoForm .formBox {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 30px;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox {
-    position: relative;
-    margin-bottom: 35px;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox.w50 {
-    width: 47%;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox.w100 {
-    width: 100%;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox input, .contenedor_formulario .contactoForm .formBox .inputBox textarea {
-    width: 100%;
-    resize: none;
-    padding: 5px 0;
-    font-size: 18px;
-    color: #333;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #777;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox textarea {
-    height: 120px;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    pointer-events: none;
-    font-size: 18px;
-    transition: 0.3s;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox input:focus ~ span, .contenedor_formulario .contactoForm .formBox .inputBox input:valid ~ span, .contenedor_formulario .contactoForm .formBox .inputBox textarea:focus ~ span, .contenedor_formulario .contactoForm .formBox .inputBox textarea:valid ~ span {
-    transform: rotateY(-20px);
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox input[type=submit] {
-    position: relative;
-    cursor: pointer;
-    background-color: #758058;
-    color: white;
-    border: none;
-    max-width: 150px;
-    padding: 12px;
-  }
-  .contenedor_formulario .contactoForm .formBox .inputBox input[type=submit]:hover {
-    background-color: #BFBB95;
-  }
-  /* Large devices (desktops, 992px and up)*/
-  /* X-Large devices (large desktops, 1200px and up)*/
 }
-@media (min-width: 768px) and (min-width: 992px) {
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
   .portada .title1 {
     position: absolute;
     top: 20%;
@@ -308,7 +309,8 @@ img {
     font-size: 47px;
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
   .portada .title1 {
     position: absolute;
     top: 20%;
