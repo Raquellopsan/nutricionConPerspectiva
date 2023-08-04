@@ -37,6 +37,7 @@ img {
   color: #758058;
   font-family: "Archivo Black", sans-serif;
   font-size: 26px;
+  text-align: center;
   margin-top: 60px;
 }
 
@@ -75,6 +76,7 @@ img {
   text-align: center;
   font-size: 18px;
   color: grey;
+  margin-top: 10px;
 }
 
 .opiniones {
@@ -82,31 +84,30 @@ img {
   margin: 50px auto;
 }
 
+.title_servicios {
+  color: #758058;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 28px;
+  margin-top: 60px;
+}
+
 .cartas {
   background-color: rgb(240, 239, 239);
   padding: 2px;
 }
-
-.title_servicios {
-  color: #758058;
-  font-family: "Archivo Black", sans-serif;
-  font-size: 26px;
-  margin-top: 60px;
-}
-
-.cards_contenedor {
+.cartas .cards_contenedor {
   align-items: center;
   justify-content: center;
 }
-
-.card {
+.cartas .card {
   position: relative;
   width: 100%;
   height: 350px;
   margin: 20px auto;
   border: none;
+  background-color: rgb(240, 239, 239);
 }
-.card .face {
+.cartas .card .face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -115,11 +116,11 @@ img {
   overflow: hidden;
   transition: 0.5s;
 }
-.card .front {
+.cartas .card .front {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
 }
-.card img {
+.cartas .card img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -127,7 +128,7 @@ img {
      object-fit: cover;
   filter: brightness(80%);
 }
-.card .front h3 {
+.cartas .card .front h3 {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -138,7 +139,7 @@ img {
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
 }
-.card .back {
+.cartas .card .back {
   transform: perspective(600px) rotateY(180deg);
   background-color: #758058;
   padding: 18px;
@@ -149,7 +150,7 @@ img {
   text-align: center;
   box-shadow: 0 5px 10px #000;
 }
-.card h3 {
+.cartas .card h3 {
   margin-top: 15px;
 }
 
@@ -182,15 +183,38 @@ img {
     font-size: 40px;
     text-align: right;
   }
-  .introduccion {
-    padding: 5px;
-    margin-top: 30px;
-  }
   .card {
     position: relative;
     width: 100%;
     height: 350px;
     margin: 20px;
+  }
+  .titulo_introduccion {
+    color: #758058;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .introduccion {
+    padding: 20px;
+    margin: 0 10px auto;
+    width: 100%;
+  }
+  .introduccion .descripcion_introduccion {
+    padding: 40px;
+    font-size: 17px;
+    margin-top: -30px;
+  }
+  .introduccion img {
+    margin-top: 20px;
+  }
+  .introduccion p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 18px;
+    color: grey;
   }
 }
 /* Large devices (desktops, 992px and up)*/
