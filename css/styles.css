@@ -30,13 +30,14 @@ img {
   font-size: 35px;
   width: 600px;
   font-weight: bold;
-  color: #C3C6A5;
+  color: #c3c6a5;
 }
 
 .titulo_introduccion {
   color: #758058;
   font-family: "Archivo Black", sans-serif;
-  margin-top: 30px;
+  font-size: 26px;
+  margin-top: 60px;
 }
 
 .introduccion {
@@ -50,16 +51,47 @@ img {
   padding: 6px;
   font-size: 17px;
   text-align: justify;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .introduccion p {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+  color: grey;
+}
+
+.quien_soy img {
+  filter: brightness(80%);
+}
+.quien_soy h2 {
+  color: #758058;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 26px;
+}
+.quien_soy p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+  color: grey;
 }
 
 .opiniones {
   width: 70%;
   margin: 50px auto;
+}
+
+.cartas {
+  background-color: rgb(240, 239, 239);
+  padding: 2px;
+}
+
+.title_servicios {
+  color: #758058;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 26px;
+  margin-top: 60px;
 }
 
 .cards_contenedor {
@@ -69,9 +101,10 @@ img {
 
 .card {
   position: relative;
-  width: 300px;
+  width: 100%;
   height: 350px;
-  margin: 20px;
+  margin: 20px auto;
+  border: none;
 }
 .card .face {
   position: absolute;
@@ -92,6 +125,7 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: brightness(80%);
 }
 .card .front h3 {
   position: absolute;
@@ -127,6 +161,10 @@ img {
   transform: perspective(600px) rotateY(360deg);
 }
 
+.separacion {
+  filter: brightness(50%);
+}
+
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .portada .title1 {
@@ -147,6 +185,12 @@ img {
   .introduccion {
     padding: 5px;
     margin-top: 30px;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: 20px;
   }
 }
 /* Large devices (desktops, 992px and up)*/
@@ -179,5 +223,14 @@ img {
     left: 22%;
     width: 850px;
     font-size: 55px;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+  .cards_contenedor {
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */

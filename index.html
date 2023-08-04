@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Proyecto Final</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -20,14 +23,23 @@
       data-use-service-core
       defer
     ></script>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid mx-5 p-2">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
+          <a
+            class="navbar-brand"
+            href="#"
+            ><img
+              src="img/logo.png"
+              alt=""
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -39,18 +51,32 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+          >
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#quien_soy"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#quien_soy"
                   >¿Quién soy?</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
+                <a
+                  class="nav-link"
+                  href="#servicios"
+                  >Servicios</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pide cita</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  >Pide cita</a
+                >
               </li>
             </ul>
           </div>
@@ -62,7 +88,11 @@
       <!--PORTADA-->
       <section>
         <div class="portada">
-          <img src="img/portada.jpeg" class="col-12" alt="" />
+          <img
+            src="img/portada.jpeg"
+            class="col-12"
+            alt=""
+          />
           <h2 class="title1">Mejora tus hábitos alimentarios conmigo</h2>
           <h1 class="title2">Cuídate desde la psiconutrición</h1>
         </div>
@@ -76,7 +106,10 @@
 
         <div class="introduccion d-flex flex-wrap">
           <div class="col-md-4 col-sm-12">
-            <img src="img/intro_img.jpg" alt="" />
+            <img
+              src="img/intro_img.jpg"
+              alt=""
+            />
           </div>
 
           <div class="col-md-8 col-sm-12 descripcion_introduccion">
@@ -102,11 +135,11 @@
       </section>
 
       <!--QUIEN SOY-->
-      <section>
+      <section class="quien_soy">
         <div>
           <img
             src="img/quien soy.jpg"
-            class="col-12 my-5 quien_soy"
+            class="col-12 my-5"
             id="quien_soy"
           />
         </div>
@@ -157,15 +190,23 @@
       </section>
 
       <!--CARDS-->
-      <section>
+      <section class="cartas">
         <div>
-          <h1 class="col-12 text-center title_servicios">Servicios</h1>
+          <h1
+            class="col-12 text-center title_servicios"
+            id="servicios"
+          >
+            Servicios
+          </h1>
         </div>
-        <div class="container d-flex flex-wrap cards_contenedor">
-          <div class="col-md-4 col-sm-12">
-            <div class="card" id="servicios">
+        <div class="container d-flex flex-wrap cards_contenedor p-2">
+          <div class="col-12 col-md-6 col-xl-4 p-3">
+            <div class="card">
               <div class="face front">
-                <img src="img/cards/1.webp" alt="" />
+                <img
+                  src="img/cards/1.webp"
+                  alt=""
+                />
                 <h3>Relación tormentosa con la comida</h3>
               </div>
               <div class="face back">
@@ -183,10 +224,13 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12">
+          <div class="col-12 col-md-6 col-xl-4 p-3">
             <div class="card">
               <div class="face front">
-                <img src="img/cards/2.jpg" alt="" />
+                <img
+                  src="img/cards/2.jpg"
+                  alt=""
+                />
                 <h3>Trastornos de la conducta alimentaria</h3>
               </div>
               <div class="face back">
@@ -203,10 +247,13 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12">
+          <div class="col-12 col-md-6 col-xl-4 p-3">
             <div class="card">
               <div class="face front">
-                <img src="img/cards/3.jpg" alt="" />
+                <img
+                  src="img/cards/3.jpg"
+                  alt=""
+                />
                 <h3>Educación nutricional</h3>
               </div>
               <div class="face back">
@@ -224,13 +271,14 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="container d-flex flex-wrap cards_contenedor">
-          <div class="col-md-4 col-sm-12">
+          <div class="col-12 col-md-6 col-xl-4 p-3">
             <div class="card">
               <div class="face front">
-                <img src="img/cards/4.jpg" alt="" />
+                <img
+                  src="img/cards/4.jpg"
+                  alt=""
+                />
                 <h3>Alimentación vegetariana</h3>
               </div>
               <div class="face back">
@@ -241,18 +289,18 @@
                   vegetariana pero no sabes si está siendo equilibrada y quieres
                   tener variedad?
                 </p>
-                <p>
-                  Yo te guiaré con las pautas necesarias para que tu dieta sea
-                  completa y saludable.
-                </p>
+                <p>Yo te guiaré con las pautas necesarias.</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-6 col-sm-12 col-xl-4 p-3">
             <div class="card">
               <div class="face front">
-                <img src="img/cards/5.webp" alt="" />
+                <img
+                  src="img/cards/5.webp"
+                  alt=""
+                />
                 <h3>Patología cardiovascular y metabólica</h3>
               </div>
               <div class="face back">
@@ -268,10 +316,13 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-12">
+          <div class="col-12 col-md-6 col-xl-4 p-3">
             <div class="card">
               <div class="face front">
-                <img src="img/cards/6.webp" alt="" />
+                <img
+                  src="img/cards/6.webp"
+                  alt=""
+                />
                 <h3>Alergias e intolerancias</h3>
               </div>
               <div class="face back">
@@ -290,7 +341,11 @@
 
       <!--SEPARACION-->
       <section>
-        <img src="img/comida sana.jpg" class="separacion col-12" alt="" />
+        <img
+          src="img/comida sana.jpg"
+          class="separacion col-12"
+          alt=""
+        />
       </section>
 
       <!--FORMULARIO-->
