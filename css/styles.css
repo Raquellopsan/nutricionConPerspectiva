@@ -10,6 +10,10 @@ img {
   max-width: 100%;
 }
 
+.nav-link:hover {
+  color: #758058;
+}
+
 .portada {
   position: relative;
 }
@@ -39,6 +43,9 @@ img {
   font-size: 26px;
   text-align: center;
   margin-top: 60px;
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
 }
 
 .introduccion {
@@ -70,6 +77,9 @@ img {
   font-size: 20px;
   font-family: "Archivo Black", sans-serif;
   font-size: 26px;
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
 }
 .quien_soy p {
   font-family: "PT Sans", sans-serif;
@@ -180,13 +190,13 @@ img {
   font-family: "Archivo Black", sans-serif;
   font-size: 26px;
 }
-.formulario .form {
+.formulario div {
   border: 1px solid rgb(214, 214, 214);
   margin: 7px 0;
   padding: 6px 20px;
   border-radius: 8px;
 }
-.formulario .form label {
+.formulario div label {
   font-size: 14px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -196,7 +206,8 @@ img {
   text-align: left;
   text-transform: uppercase;
 }
-.formulario .form input, .formulario .form textarea {
+.formulario div input,
+.formulario div textarea {
   width: 100%;
   font-size: 19px;
   font-family: "PT Sans", sans-serif;
@@ -221,6 +232,52 @@ img {
 }
 .formulario .button_form:hover {
   background-color: #c3c6a5;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.flecha {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 290px;
+}
+
+footer {
+  text-align: center;
+  background-color: #c3c6a5;
+  padding: 30px;
+  border-top: 4px solid #758058;
+}
+footer .iconos {
+  margin-top: 20px;
+}
+footer .iconos img {
+  padding: 10px;
+}
+footer nav {
+  margin-top: 20px;
+}
+footer nav a {
+  text-decoration: none;
+  padding: 15px;
+  color: grey;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+footer nav a:hover {
+  color: #f0efe3;
+}
+footer p {
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 25px;
 }
 
 /* Medium devices (tablets, 768px and up)*/

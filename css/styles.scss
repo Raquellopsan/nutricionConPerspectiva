@@ -17,6 +17,13 @@ img {
   max-width: 100%;
 }
 
+//NAV
+.nav-link {
+  &:hover {
+    color: #758058;
+  }
+}
+
 //PORTADA
 .portada {
   position: relative;
@@ -54,6 +61,10 @@ img {
   text-align: center;
 
   margin-top: 60px;
+
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
 }
 .introduccion {
   padding: 20px;
@@ -90,6 +101,10 @@ img {
 
     font-family: 'Archivo Black', sans-serif;
     font-size: 26px;
+
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
   }
 
   p {
@@ -198,7 +213,7 @@ img {
 }
 
 //FORMULARIO
-.formulario{
+.formulario {
   width: 55%;
   margin: 80px auto;
   border: 1px solid #758058;
@@ -206,19 +221,19 @@ img {
   border-radius: 8px;
   text-align: center;
 
-  h1{
+  h1 {
     color: #758058;
     font-family: 'Archivo Black', sans-serif;
     font-size: 26px;
   }
 
-  .form{
+  div {
     border: 1px solid rgb(214, 214, 214);
     margin: 7px 0;
     padding: 6px 20px;
     border-radius: 8px;
 
-    label{
+    label {
       font-size: 14px;
       font-family: 'PT Sans', sans-serif;
       font-weight: 700;
@@ -229,7 +244,8 @@ img {
       text-transform: uppercase;
     }
 
-    input, textarea{
+    input,
+    textarea {
       width: 100%;
       font-size: 19px;
       font-family: 'PT Sans', sans-serif;
@@ -238,15 +254,15 @@ img {
       border: none;
       background: none;
       outline: none;
-
     }
   }
 
-  .button_form{
+  .button_form {
     width: 100%;
     display: inline-block;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
+
     background-color: #758058;
     padding: 14px 0;
     text-decoration: none;
@@ -255,18 +271,68 @@ img {
     cursor: pointer;
     color: white;
 
-    &:hover{
+    &:hover {
       background-color: #c3c6a5;
     }
   }
 }
 
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.flecha {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 290px;
+}
+
+//FOOTER
+footer {
+  text-align: center;
+  background-color: #c3c6a5;
+  padding: 30px;
+  border-top: 4px solid #758058;
+
+  .iconos {
+    margin-top: 20px;
+
+    & img {
+      padding: 10px;
+    }
+  }
+
+  nav {
+    margin-top: 20px;
+
+    & a {
+      text-decoration: none;
+      padding: 15px;
+      color: grey;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    & a:hover {
+      color: #f0efe3;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+  }
+}
 
 //RESPONSIVEEE
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  
   //PORTADA
   .portada {
     .title1 {
@@ -315,10 +381,10 @@ img {
 
   //QUIEN SOY
   .quien_soy {
-    .descripcion{
+    .descripcion {
       padding: 20px;
     }
-   
+
     h2 {
       font-size: 26px;
     }
@@ -341,7 +407,6 @@ img {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
- 
   //PORTADA
   .portada {
     .title1 {
@@ -359,10 +424,9 @@ img {
     }
   }
 
- //INTRODUCCION
-  .introduccion{
-
-    & p{
+  //INTRODUCCION
+  .introduccion {
+    & p {
       font-size: 19px;
       margin-top: 8px;
     }
@@ -371,7 +435,6 @@ img {
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
- 
   //PORTADA
   .portada {
     .title1 {
@@ -394,9 +457,8 @@ img {
     font-size: 32px;
     margin-top: 60px;
   }
-  .introduccion{
-
-    & p{
+  .introduccion {
+    & p {
       font-size: 20px;
       margin-top: 6px;
     }
@@ -404,23 +466,21 @@ img {
 
   //QUIEN SOY
   .quien_soy {
-    .descripcion{
+    .descripcion {
       padding: 20px;
     }
-   
+
     h2 {
       font-size: 32px;
     }
 
     p {
-      
       font-size: 20px;
-      
     }
   }
 
   //CARDS
-  .title_servicios{
+  .title_servicios {
     font-size: 32px;
   }
   .cards_contenedor {
