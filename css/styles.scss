@@ -61,10 +61,6 @@ img {
   text-align: center;
 
   margin-top: 60px;
-
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
 }
 .introduccion {
   padding: 20px;
@@ -101,10 +97,6 @@ img {
 
     font-family: 'Archivo Black', sans-serif;
     font-size: 26px;
-
-    opacity: 0;
-    transform: translate(0, 10vh);
-    transition: all 1s;
   }
 
   p {
@@ -277,16 +269,12 @@ img {
   }
 }
 
-.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
 .flecha {
   position: fixed;
   bottom: 0;
   right: 0;
   margin-right: 20px;
-  margin-bottom: 290px;
+  margin-bottom: 300px;
 }
 
 //FOOTER
