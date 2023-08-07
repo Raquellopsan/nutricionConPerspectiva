@@ -21,6 +21,7 @@ img {
 .nav-link {
   &:hover {
     color: #758058;
+    font-weight: bold;
   }
 }
 
@@ -86,6 +87,7 @@ img {
   }
 }
 
+//QUIEN SOY
 .quien_soy {
   img {
     filter: brightness(80%);
@@ -109,11 +111,13 @@ img {
   }
 }
 
+//GOOGLE OPINIONES
 .opiniones {
   width: 70%;
   margin: 50px auto;
 }
 
+//SERVICIO
 .title_servicios {
   color: #758058;
 

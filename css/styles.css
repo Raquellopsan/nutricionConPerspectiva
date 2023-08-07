@@ -12,6 +12,7 @@ img {
 
 .nav-link:hover {
   color: #758058;
+  font-weight: bold;
 }
 
 .portada {
