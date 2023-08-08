@@ -12,6 +12,7 @@ img {
 
 .nav-link:hover {
   color: #758058;
+  font-weight: bold;
 }
 
 .portada {
@@ -32,7 +33,6 @@ img {
   top: 30%;
   left: 5%;
   font-size: 35px;
-  width: 100%;
   font-weight: bold;
   color: #c3c6a5;
 }
@@ -232,8 +232,8 @@ img {
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-right: 20px;
-  margin-bottom: 300px;
+  margin-right: 10px;
+  margin-bottom: 320px;
 }
 
 footer {
@@ -274,16 +274,14 @@ footer p {
   .portada .title1 {
     position: absolute;
     top: 20%;
-    left: 41%;
-    width: 400px;
+    left: 15%;
     font-size: 30px;
     text-align: right;
   }
   .portada .title2 {
     top: 37%;
-    left: 16%;
-    width: 600px;
-    font-size: 40px;
+    left: 10%;
+    font-size: 42px;
     text-align: right;
   }
   .introduccion {
@@ -330,14 +328,12 @@ footer p {
   .portada .title1 {
     position: absolute;
     top: 20%;
-    left: 53%;
-    width: 400px;
+    left: 22%;
     font-size: 32px;
   }
   .portada .title2 {
     top: 37%;
-    left: 8%;
-    width: 850px;
+    left: 15%;
     font-size: 47px;
   }
   .introduccion p {
@@ -350,15 +346,13 @@ footer p {
   .portada .title1 {
     position: absolute;
     top: 20%;
-    left: 60%;
-    width: 400px;
-    font-size: 32px;
+    left: 23%;
+    font-size: 37px;
   }
   .portada .title2 {
     top: 35%;
-    left: 22%;
-    width: 850px;
-    font-size: 55px;
+    left: 15%;
+    font-size: 60px;
   }
   .titulo_introduccion {
     font-size: 32px;
@@ -394,16 +388,14 @@ footer p {
   .portada .title1 {
     position: absolute;
     top: 20%;
-    left: 60%;
-    width: 400px;
-    font-size: 30px;
+    left: 24%;
+    font-size: 42px;
     text-align: right;
   }
   .portada .title2 {
     top: 37%;
-    left: 46%;
-    width: 600px;
-    font-size: 40px;
+    left: 17%;
+    font-size: 65px;
     text-align: right;
   }
 }/*# sourceMappingURL=styles.css.map */
