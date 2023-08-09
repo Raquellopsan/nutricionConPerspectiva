@@ -21,20 +21,25 @@ img {
 .portada img {
   filter: brightness(40%);
 }
-.portada .title1 {
+.portada .textos {
   position: absolute;
-  top: 17%;
-  left: 19%;
+  width: 100%;
+  top: 25%;
+}
+.portada .textos .title1 {
+  width: 60%;
+  margin: 10px auto;
   font-size: 20px;
   color: white;
+  text-align: center;
 }
-.portada .title2 {
-  position: absolute;
-  top: 30%;
-  left: 5%;
+.portada .textos .title2 {
+  width: 80%;
+  margin: auto;
   font-size: 35px;
   font-weight: bold;
   color: #c3c6a5;
+  text-align: center;
 }
 
 .titulo_introduccion {
@@ -271,18 +276,13 @@ footer p {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  .portada .title1 {
+  .portada .textos {
     position: absolute;
-    top: 20%;
-    left: 15%;
-    font-size: 30px;
-    text-align: right;
+    width: 100%;
+    top: 25%;
   }
-  .portada .title2 {
-    top: 37%;
-    left: 10%;
-    font-size: 42px;
-    text-align: right;
+  .portada .textos .title1 {
+    margin: 10px auto;
   }
   .introduccion {
     padding: 20px;
@@ -325,16 +325,16 @@ footer p {
 }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .portada .title1 {
+  .portada .textos {
     position: absolute;
-    top: 20%;
-    left: 22%;
-    font-size: 32px;
+    width: 100%;
+    top: 25%;
   }
-  .portada .title2 {
-    top: 37%;
-    left: 15%;
-    font-size: 47px;
+  .portada .textos .title1 {
+    font-size: 26px;
+  }
+  .portada .textos .title2 {
+    font-size: 40px;
   }
   .introduccion p {
     font-size: 19px;
@@ -343,16 +343,16 @@ footer p {
 }
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  .portada .title1 {
+  .portada .textos {
     position: absolute;
-    top: 20%;
-    left: 23%;
-    font-size: 37px;
+    width: 100%;
+    top: 26%;
   }
-  .portada .title2 {
-    top: 35%;
-    left: 15%;
-    font-size: 60px;
+  .portada .textos .title1 {
+    font-size: 30px;
+  }
+  .portada .textos .title2 {
+    font-size: 45px;
   }
   .titulo_introduccion {
     font-size: 32px;
@@ -385,17 +385,15 @@ footer p {
   }
 }
 @media (min-width: 1400px) {
-  .portada .title1 {
+  .portada .textos {
     position: absolute;
-    top: 20%;
-    left: 24%;
-    font-size: 42px;
-    text-align: right;
+    width: 100%;
+    top: 30%;
   }
-  .portada .title2 {
-    top: 37%;
-    left: 17%;
-    font-size: 65px;
-    text-align: right;
+  .portada .textos .title1 {
+    font-size: 34px;
+  }
+  .portada .textos .title2 {
+    font-size: 48px;
   }
 }/*# sourceMappingURL=styles.css.map */

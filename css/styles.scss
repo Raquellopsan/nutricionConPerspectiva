@@ -32,23 +32,29 @@ img {
   & img {
     filter: brightness(40%);
   }
-  .title1 {
+  .textos {
     position: absolute;
-    top: 17%;
-    left: 19%;
+    width: 100%;
+    top: 25%;
 
-    font-size: 20px;
+    .title1 {
+      width: 60%;
+      margin: 10px auto;
 
-    color: white;
-  }
-  .title2 {
-    position: absolute;
-    top: 30%;
-    left: 5%;
+      font-size: 20px;
 
-    font-size: 35px;
-    font-weight: bold;
-    color: #c3c6a5;
+      color: white;
+      text-align: center;
+    }
+    .title2 {
+      width: 80%;
+      margin: auto;
+
+      font-size: 35px;
+      font-weight: bold;
+      color: #c3c6a5;
+      text-align: center;
+    }
   }
 }
 
@@ -325,20 +331,13 @@ footer {
 @media (min-width: 768px) {
   //PORTADA
   .portada {
-    .title1 {
+    .textos {
       position: absolute;
-      top: 20%;
-      left: 15%;
-
-      font-size: 30px;
-      text-align: right;
-    }
-    .title2 {
-      top: 37%;
-      left: 10%;
-
-      font-size: 42px;
-      text-align: right;
+      width: 100%;
+      top: 25%;
+      .title1 {
+        margin: 10px auto;
+      }
     }
   }
 
@@ -399,21 +398,19 @@ footer {
 @media (min-width: 992px) {
   //PORTADA
   .portada {
-    .title1 {
+    .textos {
       position: absolute;
-      top: 20%;
-      left: 22%;
+      width: 100%;
+      top: 25%;
 
-      font-size: 32px;
-    }
-    .title2 {
-      top: 37%;
-      left: 15%;
-
-      font-size: 47px;
+      .title1 {
+        font-size: 26px;
+      }
+      .title2 {
+        font-size: 40px;
+      }
     }
   }
-
   //INTRODUCCION
   .introduccion {
     & p {
@@ -427,18 +424,17 @@ footer {
 @media (min-width: 1200px) {
   //PORTADA
   .portada {
-    .title1 {
+    .textos {
       position: absolute;
-      top: 20%;
-      left: 23%;
+      width: 100%;
+      top: 26%;
 
-      font-size: 37px;
-    }
-    .title2 {
-      top: 35%;
-      left: 15%;
-
-      font-size: 60px;
+      .title1 {
+        font-size: 30px;
+      }
+      .title2 {
+        font-size: 45px;
+      }
     }
   }
 
@@ -487,20 +483,17 @@ footer {
 
 @media (min-width: 1400px) {
   .portada {
-    .title1 {
+    .textos {
       position: absolute;
-      top: 20%;
-      left: 24%;
+      width: 100%;
+      top: 30%;
 
-      font-size: 42px;
-      text-align: right;
-    }
-    .title2 {
-      top: 37%;
-      left: 17%;
-
-      font-size: 65px;
-      text-align: right;
+      .title1 {
+        font-size: 34px;
+      }
+      .title2 {
+        font-size: 48px;
+      }
     }
   }
 }

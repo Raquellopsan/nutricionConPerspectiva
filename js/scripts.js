@@ -5,6 +5,8 @@ function validar(event) {
   let emailInput = document.querySelector('#email').value;
   let numeroInput = document.querySelector('#numero').value;
   let mensajeInput = document.querySelector('#mensaje').value;
+  let monthInput = document.querySelector('#month').value;
+  let timeInput = document.querySelector('#time').value;
   let respuestaInput = document.querySelector('#respuesta');
 
   let regla =
@@ -14,7 +16,9 @@ function validar(event) {
     nombreInput == '' ||
     emailInput == '' ||
     numeroInput == '' ||
-    mensajeInput == ''
+    mensajeInput == '' ||
+    monthInput == '' ||
+    timeInput == ''
   ) {
     document.querySelector('#respuesta').innerHTML =
       'Debe rellenar todos los campos';
