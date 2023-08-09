@@ -20,6 +20,10 @@
     ></script>
 
     <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="css/styles.css"
     />
@@ -102,9 +106,14 @@
 
       <!--INTRODUCCIÓN-->
       <section class="container">
-        <h1 class="col-12 titulo_introduccion">
-          Juntas podemos mejorar su salud
-        </h1>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <h1 class="col-12 titulo_introduccion">
+            Juntas podemos mejorar su salud
+          </h1>
+        </div>
 
         <div class="introduccion d-flex flex-wrap">
           <div class="col-12 col-md-6">
@@ -146,7 +155,12 @@
           />
         </div>
         <div class="container">
-          <h2 class="col-12 text-center">Sobre mí</h2>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <h2 class="col-12 text-center">Sobre mí</h2>
+          </div>
           <div class="d-flex flex-wrap">
             <div class="col-md-6 col-sm-12 descripcion">
               <p>
@@ -197,15 +211,17 @@
       </section>
 
       <!--CARDS-->
-      <section class="cartas">
-        <div>
-          <h1
-            class="col-12 text-center title_servicios"
-            id="servicios"
-          >
-            Servicios
-          </h1>
+      <section
+        class="cartas"
+        id="servicios"
+      >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <h1 class="col-12 text-center title_servicios">Servicios</h1>
         </div>
+
         <div class="container d-flex flex-wrap cards_contenedor p-2">
           <div class="col-12 col-md-6 col-xl-4 p-3">
             <div class="card">
@@ -478,5 +494,10 @@
         por Raquel López Sánchez
       </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
