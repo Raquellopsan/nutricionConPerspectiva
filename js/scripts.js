@@ -7,7 +7,6 @@ function validar(event) {
   let mensajeInput = document.querySelector('#mensaje').value;
   let monthInput = document.querySelector('#month').value;
   let timeInput = document.querySelector('#time').value;
-  let respuestaInput = document.querySelector('#respuesta');
 
   let regla =
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
